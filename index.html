@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINSURANCE | Premium Insurance Solutions</title>
+    <meta name="description"
+        content="Secure your future with Finsurance. Offering premium, trusted auto, home, life, and health insurance plans.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="nav-brand">
+            <i data-lucide="shield-check"></i>
+            FINSURANCE
+        </a>
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="plans.html">Plans</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="theme-toggle desktop" aria-label="Toggle Dark Mode">
+                <i data-lucide="moon"></i>
+            </button>
+            <a href="login.html" class="btn btn-outline" style="padding: 8px 16px;">Login</a>
+            <button class="hamburger" aria-label="Open Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer-overlay"></div>
+    <div class="mobile-drawer">
+        <button class="close-btn" aria-label="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
+        <a href="index.html" class="active">Home</a>
+        <a href="plans.html">Plans</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
+            <a href="login.html" class="btn btn-outline" style="width: 100%; justify-content: center;">Login</a>
+            <button class="theme-toggle" aria-label="Toggle Dark Mode"
+                style="width: 100%; padding: 12px; border: 1px solid var(--c-border); border-radius: var(--radius); justify-content: center; gap: 8px;">
+                Toggle Theme
+                <i data-lucide="moon"></i>
+            </button>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="assets/images/hero-bg.jpg" alt="" class="hero-bg" width="1920" height="1080" loading="eager">
+            <div class="hero-badge animate-up delay-1">
+                <i data-lucide="award" style="width: 16px;"></i> Rated #1 in Customer Trust
+            </div>
+            <h1 class="animate-up delay-1">Protect What <span class="gradient-text">Matters Most</span></h1>
+            <p class="animate-up delay-2" style="max-width: 600px; margin: 24px auto;">Experience premium, tailor-made
+                insurance solutions designed for your peace of mind. Fast claims, expert support, and comprehensive
+                coverage.</p>
+            <div class="animate-up delay-3"
+                style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 32px;">
+                <a href="plans.html" class="btn btn-primary">View Our Plans <i data-lucide="arrow-right"></i></a>
+                <a href="contact.html" class="btn btn-outline">Speak to an Advisor</a>
+            </div>
+        </section>
+
+        <!-- Trust stats -->
+        <section class="reveal" style="padding-top: var(--space-6); padding-bottom: var(--space-6);">
+            <div class="stats-strip">
+                <div class="stat">
+                    <div class="num gradient-text"><span data-count="1200000" data-suffix="+"></span></div>
+                    <div class="lbl">Clients protected</div>
+                </div>
+                <div class="stat">
+                    <div class="num gradient-text"><span data-count="98" data-suffix="%"></span></div>
+                    <div class="lbl">Claims approved</div>
+                </div>
+                <div class="stat">
+                    <div class="num gradient-text">$<span data-count="4" data-suffix="B"></span></div>
+                    <div class="lbl">Paid in claims</div>
+                </div>
+                <div class="stat">
+                    <div class="num gradient-text"><span data-count="24" data-suffix="/7"></span></div>
+                    <div class="lbl">Expert support</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plans Grid -->
+        <section id="plans" class="reveal">
+            <div class="section-header">
+                <span class="eyebrow"><i data-lucide="layers" style="width:14px;"></i> Our Coverage</span>
+                <h2>Comprehensive <span class="gradient-text">Protection</span></h2>
+                <p>Select a tailored plan that fits your lifestyle.</p>
+            </div>
+            <div class="grid grid-4">
+                <div class="card">
+                    <i data-lucide="car" class="card-icon" style="width: 48px; height: 48px;"></i>
+                    <h3>Auto Insurance</h3>
+                    <p>Drive with confidence knowing you're fully covered on the road.</p>
+                    <a href="plans.html" class="btn btn-outline" style="width: 100%; margin-top: auto;">Explore Auto</a>
+                </div>
+                <div class="card">
+                    <i data-lucide="home" class="card-icon" style="width: 48px; height: 48px;"></i>
+                    <h3>Home Insurance</h3>
+                    <p>Protect your biggest investment and your personal belongings.</p>
+                    <a href="plans.html" class="btn btn-outline" style="width: 100%; margin-top: auto;">Explore Home</a>
+                </div>
+                <div class="card">
+                    <i data-lucide="heart-pulse" class="card-icon" style="width: 48px; height: 48px;"></i>
+                    <h3>Health Insurance</h3>
+                    <p>Premium medical coverage tailored for you and your family.</p>
+                    <a href="plans.html" class="btn btn-outline" style="width: 100%; margin-top: auto;">Explore
+                        Health</a>
+                </div>
+                <div class="card">
+                    <i data-lucide="shield" class="card-icon" style="width: 48px; height: 48px;"></i>
+                    <h3>Life Insurance</h3>
+                    <p>Secure the financial future of those you love most.</p>
+                    <a href="plans.html" class="btn btn-outline" style="width: 100%; margin-top: auto;">Explore Life</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive: Coverage Builder -->
+        <section class="builder reveal">
+            <div class="section-header">
+                <span class="eyebrow"><i data-lucide="sliders-horizontal" style="width:14px;"></i> Interactive</span>
+                <h2>Build Your <span class="gradient-text">Coverage</span></h2>
+                <p style="max-width: 560px;">Move the sliders to shape a policy around your life. Your estimated premium
+                    updates live.</p>
+            </div>
+            <div class="builder-shell">
+                <div class="builder-controls">
+                    <div>
+                        <div class="slabel"
+                            style="font-family: var(--font-heading); font-weight: 600; margin-bottom: 12px;">Policy type
+                        </div>
+                        <div class="pill-row" id="cb-types">
+                            <button class="pill active" data-type="auto" data-rate="0.00042"><i data-lucide="car"></i>
+                                Auto</button>
+                            <button class="pill" data-type="home" data-rate="0.00028"><i data-lucide="home"></i>
+                                Home</button>
+                            <button class="pill" data-type="health" data-rate="0.00095"><i
+                                    data-lucide="heart-pulse"></i> Health</button>
+                            <button class="pill" data-type="life" data-rate="0.00014"><i data-lucide="shield"></i>
+                                Life</button>
+                        </div>
+                    </div>
+                    <div class="slider-field">
+                        <div class="slabel"><span>Coverage amount</span><span class="sval"
+                                id="cb-cov-val">$250,000</span></div>
+                        <input type="range" id="cb-coverage" min="50000" max="2000000" step="10000" value="250000">
+                    </div>
+                    <div class="slider-field">
+                        <div class="slabel"><span>Your age</span><span class="sval" id="cb-age-val">35</span></div>
+                        <input type="range" id="cb-age" min="18" max="75" step="1" value="35">
+                    </div>
+                    <div class="slider-field">
+                        <div class="slabel"><span>People covered</span><span class="sval" id="cb-people-val">1</span>
+                        </div>
+                        <input type="range" id="cb-people" min="1" max="6" step="1" value="1">
+                    </div>
+                    <div class="slider-field">
+                        <div class="slabel"><span>Deductible</span><span class="sval" id="cb-ded-val">$1,000</span>
+                        </div>
+                        <input type="range" id="cb-deductible" min="250" max="5000" step="250" value="1000">
+                    </div>
+                </div>
+                <div class="builder-summary">
+                    <p style="text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.75rem; opacity: 0.8;">
+                        Estimated premium</p>
+                    <div class="price"><span id="cb-price">$106</span><small> / month</small></div>
+                    <div>
+                        <div
+                            style="display:flex; justify-content:space-between; font-size:0.8rem; opacity:0.85; margin-bottom:6px;">
+                            <span>Value vs. market average</span><span id="cb-savings">18% below</span>
+                        </div>
+                        <div class="bar-track"><span class="bar-fill" id="cb-bar"></span></div>
+                    </div>
+                    <h3 style="font-size: 1.05rem; margin-top: 8px;">Included with every plan</h3>
+                    <div class="builder-meta">
+                        <span><i data-lucide="check-circle" style="width:15px;"></i> No hidden fees</span>
+                        <span><i data-lucide="check-circle" style="width:15px;"></i> Cancel anytime</span>
+                        <span><i data-lucide="check-circle" style="width:15px;"></i> 30-day guarantee</span>
+                    </div>
+                    <a href="plans.html" class="btn btn-primary" style="margin-top: 8px;">Lock in this quote <i
+                            data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About/Story Block -->
+        <section id="about" class="reveal"
+            style="background: var(--c-surface-2); border: 1px solid var(--c-border); border-radius: var(--radius-lg); padding: var(--space-8);">
+            <div class="grid grid-2" style="align-items: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <span class="eyebrow"><i data-lucide="building-2" style="width:14px;"></i> Our Story</span>
+                    <h2>Built on Trust. <span class="gradient-text">Driven by Care.</span></h2>
+                    <p style="margin: 20px 0;">Since our founding, Finsurance has been dedicated to providing
+                        uncompromising security and support. We are licensed and regulated, meaning you can trust us to
+                        be there when you need us most.</p>
+                    <div
+                        style="display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; justify-content: center;">
+                        <span class="secure-badge"><i data-lucide="check-circle" style="width: 16px;"></i> Fully
+                            Regulated</span>
+                        <span class="secure-badge"><i data-lucide="check-circle" style="width: 16px;"></i> 24/7
+                            Support</span>
+                    </div>
+                    <a href="about.html" class="btn btn-primary">Learn Our Story</a>
+                </div>
+                <div>
+                    <img src="assets/images/about-advisor.jpg" alt="Family meeting with advisor" width="1200"
+                        height="900" loading="lazy"
+                        style="width: 100%; height: auto; max-height: 400px; border-radius: var(--radius); box-shadow: var(--shadow); object-fit: cover; aspect-ratio: 4/3;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="reveal">
+            <div class="section-header">
+                <span class="eyebrow"><i data-lucide="star" style="width:14px;"></i> Testimonials</span>
+                <h2>Loved by <span class="gradient-text">Our Clients</span></h2>
+                <p>Real stories from people we've protected.</p>
+            </div>
+            <div class="grid grid-3">
+                <figure class="testimonial">
+                    <div class="stars" aria-label="Rated 5 out of 5">
+                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                    </div>
+                    <blockquote>Filing my claim after the storm took ten minutes. The payout landed in my account before the contractor even showed up.</blockquote>
+                    <figcaption>
+                        <img class="t-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80" alt="Sarah Mitchell" width="128" height="128" loading="lazy">
+                        <div>
+                            <div class="t-name">Sarah Mitchell</div>
+                            <div class="t-role">Homeowner, Austin TX</div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="testimonial">
+                    <div class="stars" aria-label="Rated 5 out of 5">
+                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                    </div>
+                    <blockquote>Switching our fleet cover to Finsurance cut our premiums by nearly a third with better protection. Their advisors actually pick up the phone.</blockquote>
+                    <figcaption>
+                        <img class="t-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80" alt="David Okafor" width="128" height="128" loading="lazy">
+                        <div>
+                            <div class="t-name">David Okafor</div>
+                            <div class="t-role">Small Business Owner</div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="testimonial">
+                    <div class="stars" aria-label="Rated 5 out of 5">
+                        <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+                    </div>
+                    <blockquote>When my son needed surgery there were no surprise bills and no fighting over paperwork. That peace of mind is worth every penny.</blockquote>
+                    <figcaption>
+                        <img class="t-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80" alt="Priya Sharma" width="128" height="128" loading="lazy">
+                        <div>
+                            <div class="t-name">Priya Sharma</div>
+                            <div class="t-role">Health Plan Member</div>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="hero reveal"
+            style="background: var(--grad-primary); color: #fff; border-radius: var(--radius-lg); margin-bottom: var(--space-8); box-shadow: var(--shadow-lg);">
+            <h2 style="color: #fff;">Ready to secure your future?</h2>
+            <p style="color: rgba(255,255,255,0.82); max-width: 500px; margin: 24px auto;">Get a customized quote today
+                and join thousands of satisfied clients who trust Finsurance.</p>
+            <a href="plans.html" class="btn btn-primary">Get a Quote <i data-lucide="arrow-right"></i></a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="nav-brand" style="margin-bottom: 16px;">
+                    <i data-lucide="shield-check"></i> FINSURANCE
+                </a>
+                <p>Premium insurance solutions tailored for your peace of mind.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Products</h4>
+                <a href="plans.html">Auto Insurance</a>
+                <a href="plans.html">Home Insurance</a>
+                <a href="plans.html">Health Insurance</a>
+                <a href="plans.html">Life Insurance</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Disclosures</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Finsurance Inc. All rights reserved.</p>
+            <p style="margin-top: 8px; opacity: 0.6;">[Finsurance] is a placeholder financial services brand. Not a real
+                financial institution. Insurance products are subject to underwriting approval.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- GA_TAG -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Interactive Coverage Builder
+        (function () {
+            var rate = 0.00042;
+            var els = {
+                coverage: document.getElementById('cb-coverage'),
+                age: document.getElementById('cb-age'),
+                people: document.getElementById('cb-people'),
+                deductible: document.getElementById('cb-deductible'),
+                covVal: document.getElementById('cb-cov-val'),
+                ageVal: document.getElementById('cb-age-val'),
+                peopleVal: document.getElementById('cb-people-val'),
+                dedVal: document.getElementById('cb-ded-val'),
+                price: document.getElementById('cb-price'),
+                bar: document.getElementById('cb-bar'),
+                savings: document.getElementById('cb-savings')
+            };
+            if (!els.coverage) return;
+            var money = function (n) { return '$' + Math.round(n).toLocaleString('en-US'); };
+
+            function recalc() {
+                var coverage = +els.coverage.value;
+                var age = +els.age.value;
+                var people = +els.people.value;
+                var deductible = +els.deductible.value;
+
+                els.covVal.textContent = money(coverage);
+                els.ageVal.textContent = age;
+                els.peopleVal.textContent = people;
+                els.dedVal.textContent = money(deductible);
+
+                var ageFactor = 1 + Math.max(0, (age - 30)) * 0.013;
+                var peopleFactor = 1 + (people - 1) * 0.32;
+                var dedFactor = 1 - Math.min(0.32, (deductible - 250) / 4750 * 0.32);
+                var monthly = Math.max(18, coverage * rate * ageFactor * peopleFactor * dedFactor);
+
+                els.price.textContent = money(monthly);
+
+                var below = Math.round(6 + (deductible - 250) / 4750 * 22 + Math.max(0, 45 - age) / 45 * 7);
+                els.savings.textContent = below + '% below';
+                els.bar.style.width = Math.min(100, Math.round(below / 35 * 100)) + '%';
+            }
+
+            document.querySelectorAll('#cb-types .pill').forEach(function (p) {
+                p.addEventListener('click', function () {
+                    document.querySelectorAll('#cb-types .pill').forEach(function (x) { x.classList.remove('active'); });
+                    p.classList.add('active');
+                    rate = +p.dataset.rate;
+                    recalc();
+                });
+            });
+            ['coverage', 'age', 'people', 'deductible'].forEach(function (k) {
+                els[k].addEventListener('input', recalc);
+            });
+            recalc();
+        })();
+    </script>
+</body>
+
+</html>

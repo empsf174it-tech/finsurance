@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | FINSURANCE</title>
+    <meta name="description"
+        content="Learn about Finsurance's mission, our team, and our commitment to protecting your future.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="nav-brand">
+            <i data-lucide="shield-check"></i>
+            FINSURANCE
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="plans.html">Plans</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="theme-toggle desktop" aria-label="Toggle Dark Mode">
+                <i data-lucide="moon"></i>
+            </button>
+            <a href="login.html" class="btn btn-outline" style="padding: 8px 16px;">Login</a>
+            <button class="hamburger" aria-label="Open Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer-overlay"></div>
+    <div class="mobile-drawer">
+        <button class="close-btn" aria-label="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
+        <a href="index.html">Home</a>
+        <a href="plans.html">Plans</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
+            <a href="login.html" class="btn btn-outline" style="width: 100%; justify-content: center;">Login</a>
+            <button class="theme-toggle" aria-label="Toggle Dark Mode"
+                style="width: 100%; padding: 12px; border: 1px solid var(--c-border); border-radius: var(--radius); justify-content: center; gap: 8px;">
+                Toggle Theme
+                <i data-lucide="moon"></i>
+            </button>
+        </div>
+    </div>
+
+    <main>
+        <!-- Page Header -->
+        <section class="section-header">
+            <span class="eyebrow animate-up"><i data-lucide="info" style="width:14px;"></i> About Us</span>
+            <h1 class="animate-up delay-1">Our Mission is <span class="gradient-text">Your Security</span></h1>
+            <p class="animate-up delay-2" style="max-width: 600px; margin: 16px auto;">For over 15 years, we've been the
+                trusted partner for families and businesses seeking comprehensive and reliable insurance.</p>
+        </section>
+
+        <!-- Our Story -->
+        <section style="padding-top: 0;">
+            <div class="grid grid-2 story-grid"
+                style="align-items: center; background: var(--c-surface); border-radius: var(--radius);">
+                <div>
+                    <img src="assets/images/about-office.jpg" alt="Corporate office" width="1200" height="900"
+                        loading="lazy"
+                        style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); object-fit: cover;">
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                    <span class="eyebrow"><i data-lucide="building-2" style="width:14px;"></i> Our Story</span>
+                    <h2>A Legacy of <span class="gradient-text">Trust</span></h2>
+                    <p style="margin: 20px 0;">Founded on the principles of transparency and care, Finsurance began as a
+                        small advisory firm. Today, we protect over a million policyholders nationwide.</p>
+                    <p style="margin-bottom: 24px;">Our commitment to ethical practices and swift claims resolution has
+                        earned us consistent top ratings from independent regulatory bodies.</p>
+                    <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
+                        <span class="secure-badge"><i data-lucide="award" style="width: 16px;"></i> A+ Rating</span>
+                        <span class="secure-badge"><i data-lucide="shield" style="width: 16px;"></i> Licensed in 50
+                            States</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="reveal">
+            <div class="section-header">
+                <span class="eyebrow"><i data-lucide="milestone" style="width:14px;"></i> Our Journey</span>
+                <h2>Milestones That <span class="gradient-text">Shaped Us</span></h2>
+                <p>Fifteen years of building trust, one policyholder at a time.</p>
+            </div>
+            <ol class="timeline">
+                <li class="tl-item">
+                    <div class="tl-dot"><i data-lucide="flag"></i></div>
+                    <div class="tl-card">
+                        <span class="tl-year">2011</span>
+                        <h3>Finsurance is founded</h3>
+                        <p>A three-person advisory firm opens its doors with one promise: insurance without the fine-print games.</p>
+                    </div>
+                </li>
+                <li class="tl-item">
+                    <div class="tl-dot"><i data-lucide="users"></i></div>
+                    <div class="tl-card">
+                        <span class="tl-year">2014</span>
+                        <h3>10,000 families covered</h3>
+                        <p>Our first regional expansion brings auto and home coverage to five new states.</p>
+                    </div>
+                </li>
+                <li class="tl-item">
+                    <div class="tl-dot"><i data-lucide="smartphone"></i></div>
+                    <div class="tl-card">
+                        <span class="tl-year">2018</span>
+                        <h3>Claims go fully digital</h3>
+                        <p>The 10-minute claim launches &mdash; file, track and get paid from your phone, no call-centre queue.</p>
+                    </div>
+                </li>
+                <li class="tl-item">
+                    <div class="tl-dot"><i data-lucide="award"></i></div>
+                    <div class="tl-card">
+                        <span class="tl-year">2021</span>
+                        <h3>Rated #1 in customer trust</h3>
+                        <p>Independent regulators rank Finsurance top for claims resolution three years running.</p>
+                    </div>
+                </li>
+                <li class="tl-item">
+                    <div class="tl-dot"><i data-lucide="shield-check"></i></div>
+                    <div class="tl-card">
+                        <span class="tl-year">2026</span>
+                        <h3>Over 1.2 million protected</h3>
+                        <p>Nationwide coverage across every major line, with $4B paid in claims and counting.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Leadership -->
+        <section>
+            <div class="section-header">
+                <span class="eyebrow"><i data-lucide="users" style="width:14px;"></i> Our Team</span>
+                <h2>Leadership Team</h2>
+                <p>Guided by experience and a passion for protection.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <img src="assets/images/team-ceo.jpg" alt="CEO" width="1200" height="900" loading="lazy">
+                    <h3>Marcus Thorne</h3>
+                    <p>Chief Executive Officer</p>
+                </div>
+                <div class="card">
+                    <img src="assets/images/team-coo.jpg" alt="COO" width="1200" height="900" loading="lazy">
+                    <h3>Elena Rostova</h3>
+                    <p>Chief Operating Officer</p>
+                </div>
+                <div class="card">
+                    <img src="assets/images/team-cro.jpg" alt="CMO" width="1200" height="900" loading="lazy">
+                    <h3>David Chen</h3>
+                    <p>Chief Risk Officer</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="nav-brand" style="margin-bottom: 16px;">
+                    <i data-lucide="shield-check"></i> FINSURANCE
+                </a>
+                <p>Premium insurance solutions tailored for your peace of mind.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Products</h4>
+                <a href="plans.html">Auto Insurance</a>
+                <a href="plans.html">Home Insurance</a>
+                <a href="plans.html">Health Insurance</a>
+                <a href="plans.html">Life Insurance</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Disclosures</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Finsurance Inc. All rights reserved.</p>
+            <p style="margin-top: 8px; opacity: 0.6;">[Finsurance] is a placeholder financial services brand. Not a real
+                financial institution. Insurance products are subject to underwriting approval.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- GA_TAG -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

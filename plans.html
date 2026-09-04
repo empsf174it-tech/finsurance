@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Plans | FINSURANCE</title>
+    <meta name="description"
+        content="Explore our premium insurance plans including auto, home, health, and life insurance.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="nav-brand">
+            <i data-lucide="shield-check"></i>
+            FINSURANCE
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="plans.html" class="active">Plans</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="theme-toggle desktop" aria-label="Toggle Dark Mode">
+                <i data-lucide="moon"></i>
+            </button>
+            <a href="login.html" class="btn btn-outline" style="padding: 8px 16px;">Login</a>
+            <button class="hamburger" aria-label="Open Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer-overlay"></div>
+    <div class="mobile-drawer">
+        <button class="close-btn" aria-label="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
+        <a href="index.html">Home</a>
+        <a href="plans.html" class="active">Plans</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
+            <a href="login.html" class="btn btn-outline" style="width: 100%; justify-content: center;">Login</a>
+            <button class="theme-toggle" aria-label="Toggle Dark Mode"
+                style="width: 100%; padding: 12px; border: 1px solid var(--c-border); border-radius: var(--radius); justify-content: center; gap: 8px;">
+                Toggle Theme
+                <i data-lucide="moon"></i>
+            </button>
+        </div>
+    </div>
+
+    <main>
+        <section class="section-header">
+            <span class="eyebrow animate-up"><i data-lucide="shield-check" style="width:14px;"></i> Plans</span>
+            <h1 class="animate-up delay-1">Coverage <span class="gradient-text">Tailored to You</span></h1>
+            <p class="animate-up delay-2" style="max-width: 600px; margin: 16px auto;">Discover premium policies
+                designed to provide complete security. Estimate your premium instantly.</p>
+        </section>
+
+        <!-- Plans Grid with working filters -->
+        <section style="padding-top: 0;">
+            <div id="plan-filters"
+                style="display: flex; justify-content: center; gap: 12px; margin-bottom: 48px; flex-wrap: wrap;">
+                <button class="btn btn-primary" data-filter="all" style="padding: 8px 18px;">All Plans</button>
+                <button class="btn btn-outline" data-filter="auto" style="padding: 8px 18px;">Auto</button>
+                <button class="btn btn-outline" data-filter="home" style="padding: 8px 18px;">Home</button>
+                <button class="btn btn-outline" data-filter="health" style="padding: 8px 18px;">Health</button>
+                <button class="btn btn-outline" data-filter="life" style="padding: 8px 18px;">Life</button>
+            </div>
+
+            <div class="grid grid-2" id="plan-grid">
+                <!-- Auto Plan -->
+                <div class="card plan-card" data-cat="auto">
+                    <img src="assets/images/plan-auto.jpg" alt="Car driving" width="1200" height="800" loading="lazy"
+                        style="height: 240px;">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%;">
+                        <h3>Comprehensive Auto</h3>
+                        <i data-lucide="car" style="color: var(--c-primary);"></i>
+                    </div>
+                    <p>Full coverage for collisions, liabilities, and unexpected road events. Includes 24/7 roadside
+                        assistance.</p>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check"></i> Collision & Comprehensive</li>
+                        <li><i data-lucide="check"></i> Liability Protection</li>
+                        <li><i data-lucide="check"></i> Rental Reimbursement</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%; margin-top: auto;">Get a
+                        Quote</a>
+                </div>
+
+                <!-- Home Plan -->
+                <div class="card plan-card" data-cat="home">
+                    <img src="assets/images/plan-home.jpg" alt="Beautiful house" width="1200" height="800"
+                        loading="lazy" style="height: 240px;">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%;">
+                        <h3>Premium Home</h3>
+                        <i data-lucide="home" style="color: var(--c-primary);"></i>
+                    </div>
+                    <p>Safeguard your sanctuary. Coverage for property damage, personal liability, and high-value items.
+                    </p>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check"></i> Dwelling Protection</li>
+                        <li><i data-lucide="check"></i> Personal Property</li>
+                        <li><i data-lucide="check"></i> Personal Liability</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%; margin-top: auto;">Get a
+                        Quote</a>
+                </div>
+
+                <!-- Health Plan -->
+                <div class="card plan-card" data-cat="health">
+                    <img src="assets/images/plan-health.jpg" alt="Medical professional" width="1200" height="800"
+                        loading="lazy" style="height: 240px;">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%;">
+                        <h3>Family Health Plus</h3>
+                        <i data-lucide="heart-pulse" style="color: var(--c-primary);"></i>
+                    </div>
+                    <p>Top-tier medical coverage with low deductibles and access to a massive national network of
+                        specialists.</p>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check"></i> Low Deductible</li>
+                        <li><i data-lucide="check"></i> Prescription Coverage</li>
+                        <li><i data-lucide="check"></i> Telehealth Included</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%; margin-top: auto;">Get a
+                        Quote</a>
+                </div>
+
+                <!-- Life Plan -->
+                <div class="card plan-card" data-cat="life">
+                    <img src="assets/images/plan-life.jpg" alt="Family holding hands" width="1200" height="800"
+                        loading="lazy" style="height: 240px;">
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%;">
+                        <h3>Term Life Elite</h3>
+                        <i data-lucide="shield" style="color: var(--c-primary);"></i>
+                    </div>
+                    <p>Guaranteed financial security for your dependents with flexible terms of 10, 20, or 30 years.</p>
+                    <ul class="plan-features">
+                        <li><i data-lucide="check"></i> Fixed Premiums</li>
+                        <li><i data-lucide="check"></i> Tax-Free Death Benefit</li>
+                        <li><i data-lucide="check"></i> Conversion Options</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%; margin-top: auto;">Get a
+                        Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive: Plan Finder quiz -->
+        <section class="finder reveal">
+            <div class="section-header">
+                <span class="eyebrow"><i data-lucide="wand-2" style="width:14px;"></i> Interactive</span>
+                <h2>Find Your <span class="gradient-text">Perfect Plan</span></h2>
+                <p style="max-width: 560px;">Answer three quick questions and we'll point you to the coverage that fits
+                    best.</p>
+            </div>
+
+            <div class="finder-shell">
+                <div class="finder-progress"><i id="fd-bar"></i></div>
+
+                <!-- Step 1 -->
+                <div class="finder-step active" data-step="1">
+                    <h3>What do you most want to protect?</h3>
+                    <p>Pick the one that matters most right now.</p>
+                    <div class="opt-grid">
+                        <button class="opt" data-key="auto"><i data-lucide="car"></i> My vehicle</button>
+                        <button class="opt" data-key="home"><i data-lucide="home"></i> My home</button>
+                        <button class="opt" data-key="health"><i data-lucide="heart-pulse"></i> My family's
+                            health</button>
+                        <button class="opt" data-key="life"><i data-lucide="shield"></i> My family's future</button>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="finder-step" data-step="2">
+                    <h3>Who depends on you financially?</h3>
+                    <p>This shapes how much coverage you need.</p>
+                    <div class="opt-grid">
+                        <button class="opt" data-key="solo"><i data-lucide="user"></i> Just me</button>
+                        <button class="opt" data-key="partner"><i data-lucide="users"></i> Me and a partner</button>
+                        <button class="opt" data-key="kids"><i data-lucide="baby"></i> Children at home</button>
+                        <button class="opt" data-key="parents"><i data-lucide="heart-handshake"></i> Extended
+                            family</button>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="finder-step" data-step="3">
+                    <h3>What matters more to you?</h3>
+                    <p>We'll tune the recommendation to your priority.</p>
+                    <div class="opt-grid">
+                        <button class="opt" data-key="low"><i data-lucide="piggy-bank"></i> Lowest monthly cost</button>
+                        <button class="opt" data-key="balanced"><i data-lucide="scale"></i> A balanced plan</button>
+                        <button class="opt" data-key="max"><i data-lucide="gem"></i> Maximum protection</button>
+                        <button class="opt" data-key="flex"><i data-lucide="repeat"></i> Flexibility to change</button>
+                    </div>
+                </div>
+
+                <!-- Result -->
+                <div class="finder-result" id="fd-result">
+                    <i data-lucide="badge-check" class="result-icon"></i>
+                    <p style="text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.75rem;">We recommend</p>
+                    <h3 class="rec-name" id="fd-name">Comprehensive Auto</h3>
+                    <p id="fd-desc" style="max-width: 460px; margin: 12px auto 0;">Full coverage for collisions,
+                        liabilities, and unexpected road events.</p>
+                    <ul id="fd-points"></ul>
+                    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+                        <a href="contact.html" class="btn btn-primary">Get this quote <i
+                                data-lucide="arrow-right"></i></a>
+                        <button class="btn btn-outline" id="fd-restart" type="button">Start over</button>
+                    </div>
+                </div>
+
+                <div class="finder-nav" id="fd-nav">
+                    <button class="btn btn-outline" id="fd-back" type="button" disabled><i data-lucide="arrow-left"></i>
+                        Back</button>
+                    <span style="align-self:center; font-size:0.8rem; color:var(--c-text-muted);" id="fd-count">Step 1
+                        of 3</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Estimator Tool -->
+        <section id="calculator" class="reveal"
+            style="background: var(--c-surface-2); border: 1px solid var(--c-border); border-radius: var(--radius-lg); margin-bottom: var(--space-8);">
+            <div class="grid grid-2" style="align-items: center;">
+                <div>
+                    <span class="eyebrow"><i data-lucide="calculator" style="width:14px;"></i> Estimator</span>
+                    <h2 style="text-align: left;">Quick Premium Estimator</h2>
+                    <p style="text-align: left; margin: 16px 0;">Get a rough idea of your monthly premiums instantly.
+                        Note that final quotes depend on full underwriting.</p>
+                    <p style="text-align: left; font-size: 0.75rem; opacity: 0.7;">*Disclaimer: These figures are
+                        estimates only and do not constitute a final offer or financial advice.</p>
+                </div>
+                <div class="form-wrapper" style="width: 100%;">
+                    <form id="estimator-form" novalidate>
+                        <div class="form-group">
+                            <label for="policy_type">Policy Type</label>
+                            <select id="policy_type" required>
+                                <option value="">Select a policy</option>
+                                <option value="auto">Auto Insurance</option>
+                                <option value="home">Home Insurance</option>
+                                <option value="health">Health Insurance</option>
+                                <option value="life">Life Insurance</option>
+                            </select>
+                            <div class="error-msg">Please select a policy type.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="coverage_amt">Coverage Amount ($)</label>
+                            <input type="number" id="coverage_amt" placeholder="e.g. 500000" required>
+                            <div class="error-msg">Please enter a valid numeric amount.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Calculate Estimate</button>
+                        <div class="success-msg" id="calc-result" style="font-size: 1.25rem;"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="nav-brand" style="margin-bottom: 16px;">
+                    <i data-lucide="shield-check"></i> FINSURANCE
+                </a>
+                <p>Premium insurance solutions tailored for your peace of mind.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Products</h4>
+                <a href="plans.html">Auto Insurance</a>
+                <a href="plans.html">Home Insurance</a>
+                <a href="plans.html">Health Insurance</a>
+                <a href="plans.html">Life Insurance</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Disclosures</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Finsurance Inc. All rights reserved.</p>
+            <p style="margin-top: 8px; opacity: 0.6;">[Finsurance] is a placeholder financial services brand. Not a real
+                financial institution. Insurance products are subject to underwriting approval.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- GA_TAG -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Custom logic for the estimator, extending main.js validation
+        document.getElementById('estimator-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const type = document.getElementById('policy_type').value;
+            const amt = parseFloat(document.getElementById('coverage_amt').value);
+            const resultDiv = document.getElementById('calc-result');
+
+            if (type && !isNaN(amt) && amt > 0) {
+                // Mock calculation based on type
+                let rate = 0.0005;
+                if (type === 'home') rate = 0.0003;
+                if (type === 'health') rate = 0.002;
+
+                const monthly = Math.max(20, amt * rate);
+                resultDiv.style.display = 'block';
+                resultDiv.innerHTML = `Estimated Premium: <strong>$${monthly.toFixed(2)} / month</strong><br><span style="font-size: 0.75rem; font-weight: normal;">*Subject to underwriting approval</span>`;
+            } else {
+                resultDiv.style.display = 'none';
+            }
+        });
+
+        // Working plan filters
+        (function () {
+            var btns = document.querySelectorAll('#plan-filters button');
+            var cards = document.querySelectorAll('#plan-grid .plan-card');
+            btns.forEach(function (b) {
+                b.addEventListener('click', function () {
+                    btns.forEach(function (x) { x.classList.remove('btn-primary'); x.classList.add('btn-outline'); });
+                    b.classList.add('btn-primary'); b.classList.remove('btn-outline');
+                    var f = b.dataset.filter;
+                    cards.forEach(function (c) {
+                        var show = f === 'all' || c.dataset.cat === f;
+                        c.style.display = show ? '' : 'none';
+                    });
+                });
+            });
+        })();
+
+        // Interactive Plan Finder quiz
+        (function () {
+            var steps = document.querySelectorAll('.finder-step');
+            var bar = document.getElementById('fd-bar');
+            var back = document.getElementById('fd-back');
+            var count = document.getElementById('fd-count');
+            var nav = document.getElementById('fd-nav');
+            var result = document.getElementById('fd-result');
+            if (!steps.length) return;
+
+            var answers = {};
+            var current = 1;
+            var total = steps.length;
+
+            var PLANS = {
+                auto: { name: 'Comprehensive Auto', desc: 'Full coverage for collisions, liabilities, and unexpected road events, with 24/7 roadside assistance.', points: ['Collision & comprehensive', 'Liability protection', 'Rental reimbursement'] },
+                home: { name: 'Premium Home', desc: 'Safeguard your sanctuary with coverage for property damage, personal liability, and high-value items.', points: ['Dwelling protection', 'Personal property', 'Personal liability'] },
+                health: { name: 'Family Health Plus', desc: 'Top-tier medical coverage with low deductibles and a large national network of specialists.', points: ['Low deductible', 'Prescription coverage', 'Telehealth included'] },
+                life: { name: 'Term Life Elite', desc: 'Guaranteed financial security for your dependents with flexible 10, 20, or 30-year terms.', points: ['Fixed premiums', 'Tax-free death benefit', 'Conversion options'] }
+            };
+
+            function render() {
+                steps.forEach(function (s) { s.classList.toggle('active', +s.dataset.step === current); });
+                bar.style.width = Math.round((current - 1) / total * 100 + (100 / total)) + '%';
+                count.textContent = 'Step ' + current + ' of ' + total;
+                back.disabled = current === 1;
+            }
+
+            function finish() {
+                var pick = answers[1] || 'auto';
+                // Nudge toward life cover when protecting dependents + future-minded
+                if ((answers[2] === 'kids' || answers[2] === 'parents') && answers[3] === 'max' && pick !== 'health') pick = 'life';
+                if (answers[2] === 'kids' && pick === 'auto' && answers[3] !== 'low') pick = 'life';
+
+                var p = PLANS[pick];
+                document.getElementById('fd-name').textContent = p.name;
+                document.getElementById('fd-desc').textContent = p.desc;
+                var ul = document.getElementById('fd-points');
+                ul.innerHTML = p.points.map(function (t) { return '<li><i data-lucide="check"></i> ' + t + '</li>'; }).join('');
+                steps.forEach(function (s) { s.classList.remove('active'); });
+                nav.style.display = 'none';
+                result.classList.add('show');
+                if (typeof lucide !== 'undefined') lucide.createIcons();
+                result.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+
+            steps.forEach(function (step) {
+                step.querySelectorAll('.opt').forEach(function (opt) {
+                    opt.addEventListener('click', function () {
+                        step.querySelectorAll('.opt').forEach(function (o) { o.classList.remove('active'); });
+                        opt.classList.add('active');
+                        answers[current] = opt.dataset.key;
+                        setTimeout(function () {
+                            if (current < total) { current++; render(); }
+                            else { finish(); }
+                        }, 220);
+                    });
+                });
+            });
+
+            back.addEventListener('click', function () {
+                if (current > 1) { current--; render(); }
+            });
+
+            document.getElementById('fd-restart').addEventListener('click', function () {
+                answers = {}; current = 1;
+                document.querySelectorAll('.opt.active').forEach(function (o) { o.classList.remove('active'); });
+                result.classList.remove('show');
+                nav.style.display = '';
+                render();
+            });
+
+            render();
+        })();
+    </script>
+</body>
+
+</html>

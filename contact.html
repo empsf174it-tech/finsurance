@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | FINSURANCE</title>
+    <meta name="description" content="Get in touch with Finsurance advisors for your insurance needs.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="nav-brand">
+            <i data-lucide="shield-check"></i>
+            FINSURANCE
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="plans.html">Plans</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="theme-toggle desktop" aria-label="Toggle Dark Mode">
+                <i data-lucide="moon"></i>
+            </button>
+            <a href="login.html" class="btn btn-outline" style="padding: 8px 16px;">Login</a>
+            <button class="hamburger" aria-label="Open Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer-overlay"></div>
+    <div class="mobile-drawer">
+        <button class="close-btn" aria-label="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
+        <a href="index.html">Home</a>
+        <a href="plans.html">Plans</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
+            <a href="login.html" class="btn btn-outline" style="width: 100%; justify-content: center;">Login</a>
+            <button class="theme-toggle" aria-label="Toggle Dark Mode" style="width: 100%; padding: 12px; border: 1px solid var(--c-border); border-radius: var(--radius); justify-content: center; gap: 8px;">
+                Toggle Theme
+                <i data-lucide="moon"></i>
+            </button>
+        </div>
+    </div>
+
+    <main>
+        <section class="section-header">
+            <span class="eyebrow animate-up"><i data-lucide="message-square" style="width:14px;"></i> Contact Us</span>
+            <h1 class="animate-up delay-1">We're Here <span class="gradient-text">to Help</span></h1>
+            <p class="animate-up delay-2" style="max-width: 600px; margin: 16px auto;">Reach out to our expert advisors to discuss your policy, file a claim, or request a custom quote.</p>
+        </section>
+
+        <section style="padding-top: 0;">
+            <div class="grid grid-2 contact-grid">
+                <!-- Contact Form -->
+                <div class="form-wrapper" style="width: 100%;">
+                    <h2 style="text-align: left; font-size: 1.75rem; margin-bottom: 24px;">Send us a message</h2>
+                    <!-- Action points to Formspree placeholder as per Step 14 -->
+                    <form action="https://formspree.io/f/placeholder" method="POST" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                            <div class="error-msg">Please enter your name.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            <div class="error-msg">Please enter a valid email.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select an inquiry type</option>
+                                <option value="quote">Request a Quote</option>
+                                <option value="support">Policy Support</option>
+                                <option value="claim">File a Claim</option>
+                            </select>
+                            <div class="error-msg">Please select a subject.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="How can we assist you?"></textarea>
+                            <div class="error-msg">Please enter your message.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        <div class="success-msg">Thank you! Your message has been sent successfully.</div>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Map Placeholder -->
+                <div class="contact-info-col" style="display: flex; flex-direction: column; gap: 32px;">
+                    <div class="contact-info-card" style="background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--radius); padding: var(--space-6); text-align: left;">
+                        <h3 style="text-align: center; margin-bottom: 16px;">Contact Information</h3>
+                        <div style="display: flex; flex-direction: column; gap: 16px; width: fit-content; max-width: 100%; margin: 0 auto;">
+                            <div class="contact-line" style="display: flex; align-items: center; gap: 12px; color: var(--c-text-muted);">
+                                <i data-lucide="map-pin" style="color: var(--c-primary);"></i>
+                                <span>123 Financial District, Suite 500<br>New York, NY 10004</span>
+                            </div>
+                            <div class="contact-line" style="display: flex; align-items: center; gap: 12px; color: var(--c-text-muted);">
+                                <i data-lucide="phone" style="color: var(--c-primary);"></i>
+                                <span>+1 (800) 555-0199</span>
+                            </div>
+                            <div class="contact-line" style="display: flex; align-items: center; gap: 12px; color: var(--c-text-muted);">
+                                <i data-lucide="mail" style="color: var(--c-primary);"></i>
+                                <span>support@finsurance.placeholder</span>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 32px; text-align: center;">
+                            <h4 style="margin-bottom: 12px; font-size: 1rem;">Connect with us</h4>
+                            <div class="social-links-row">
+                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                                </a>
+                                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C4 16 2.4 13.6 2 10c1.1.9 3.7 1 5-2-4-.9-4-4-3.5-6.5C6 4.5 10 6.5 12 8c0-3 3-4.5 5.5-3 1 1 1.5 2 1.5 2 1.3 0 3-1 3-1z"/></svg>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5A6 6 0 0 1 16 8z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                                </a>
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Google Map -->
+                    <div style="width: 100%; height: 320px; background: var(--c-surface); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--c-border); box-shadow: var(--shadow-sm); position: relative;">
+                        <iframe
+                            title="Finsurance Office Location Map"
+                            width="100%"
+                            height="100%"
+                            style="border:0; display: block; width: 100%; height: 100%;"
+                            loading="lazy"
+                            allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://maps.google.com/maps?q=123+Financial+District,+New+York,+NY+10004&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="nav-brand" style="margin-bottom: 16px;">
+                    <i data-lucide="shield-check"></i> FINSURANCE
+                </a>
+                <p>Premium insurance solutions tailored for your peace of mind.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Products</h4>
+                <a href="plans.html">Auto Insurance</a>
+                <a href="plans.html">Home Insurance</a>
+                <a href="plans.html">Health Insurance</a>
+                <a href="plans.html">Life Insurance</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Disclosures</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Finsurance Inc. All rights reserved.</p>
+            <p style="margin-top: 8px; opacity: 0.6;">[Finsurance] is a placeholder financial services brand. Not a real financial institution. Insurance products are subject to underwriting approval.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- GA_TAG -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

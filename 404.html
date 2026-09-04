@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | FINSURANCE</title>
+    <meta name="description" content="The page you are looking for does not exist.">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .error-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--space-12) var(--space-4);
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 600;
+            color: var(--c-primary);
+            line-height: 1;
+            margin-bottom: var(--space-2);
+            font-family: var(--font-heading);
+            background: linear-gradient(135deg, var(--c-primary), var(--c-accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="nav-brand">
+            <i data-lucide="shield-check"></i>
+            FINSURANCE
+        </a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="plans.html">Plans</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <button class="theme-toggle desktop" aria-label="Toggle Dark Mode">
+                <i data-lucide="moon"></i>
+            </button>
+            <a href="login.html" class="btn btn-outline" style="padding: 8px 16px;">Login</a>
+            <button class="hamburger" aria-label="Open Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="drawer-overlay"></div>
+    <div class="mobile-drawer">
+        <button class="close-btn" aria-label="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
+        <a href="index.html">Home</a>
+        <a href="plans.html">Plans</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
+            <a href="login.html" class="btn btn-outline" style="width: 100%; justify-content: center;">Login</a>
+            <button class="theme-toggle" aria-label="Toggle Dark Mode" style="width: 100%; padding: 12px; border: 1px solid var(--c-border); border-radius: var(--radius); justify-content: center; gap: 8px;">
+                Toggle Theme
+                <i data-lucide="moon"></i>
+            </button>
+        </div>
+    </div>
+
+    <main class="error-container">
+        <div class="error-code animate-up">404</div>
+        <h1 class="animate-up delay-1" style="margin-bottom: 16px;">Page Not Found</h1>
+        <p class="animate-up delay-2" style="max-width: 500px; margin-bottom: 32px;">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+        <a href="index.html" class="btn btn-primary animate-up delay-3"><i data-lucide="arrow-left"></i> Back to Home</a>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="nav-brand" style="margin-bottom: 16px;">
+                    <i data-lucide="shield-check"></i> FINSURANCE
+                </a>
+                <p>Premium insurance solutions tailored for your peace of mind.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Products</h4>
+                <a href="plans.html">Auto Insurance</a>
+                <a href="plans.html">Home Insurance</a>
+                <a href="plans.html">Health Insurance</a>
+                <a href="plans.html">Life Insurance</a>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Disclosures</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Finsurance Inc. All rights reserved.</p>
+            <p style="margin-top: 8px; opacity: 0.6;">[Finsurance] is a placeholder financial services brand. Not a real financial institution. Insurance products are subject to underwriting approval.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- GA_TAG -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
