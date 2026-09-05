@@ -205,4 +205,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { threshold: 0.5 });
         countEls.forEach(el => cio.observe(el));
     }
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-item').forEach(item => {
+        const question = item.querySelector('.faq-question');
+        if (!question) return;
+        question.addEventListener('click', () => {
+            const isOpen = item.classList.contains('open');
+            item.closest('.faq-list').querySelectorAll('.faq-item.open').forEach(open => {
+                if (open !== item) {
+                    open.classList.remove('open');
+                    open.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                }
+            });
+            item.classList.toggle('open', !isOpen);
+            question.setAttribute('aria-expanded', String(!isOpen));
+        });
+    });
 });
